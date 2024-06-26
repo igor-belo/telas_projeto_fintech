@@ -35,6 +35,9 @@
             margin-bottom: 20px;
         }
         .mt-3 {
+            color: #4169E1;
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
             text-align: center
         }
 
@@ -48,41 +51,19 @@
             box-sizing: border-box;
         }
 
-        button {
+        .submit {
             background-color: #4169E1;
             color: #fff;
-            padding: 7px 20px;
+            padding: 5px 20px;
             border: none;
             border-radius: 15px;
             cursor: pointer;
         }
 
-        button:hover {
-            font-family: "Roboto", sans-serif;
-            font-weight: 700;
-            font-style: normal;
-            background-color: #4169E1;
+        .submit:hover {
+            background-color: #f4f4f4;
         }
 
-        .google-button {
-            background-color: #fff;
-            color: #4169E1;
-            border: 1px solid #4169E1;
-            padding: 7px 20px;
-            border-radius: 15px;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .google-button:hover {
-            background-color: #e6f2ff;
-        }
-
-        .google-icon {
-            margin-right: 4%;
-        }
         .input-group-prepend span.input-group-text {
         background-color: #ffffff;
         border: none; 
@@ -98,24 +79,60 @@
             padding: 20px;
             align-items: center;
         }
-
+        
         .campos {
             font-family: "Roboto", sans-serif;
             font-weight: 700;
             font-style: normal;
             color: #4169E1;
             display: flex;
-            padding: 10px 0px 0px 40px;
+            padding: 0px 0px 0px 40px;
         }
-        
+
+        .logar {
+            background-color: #fff;
+            color: #4169E1;
+            border: 1px solid #4169E1;
+            padding: 8px 20px;
+            border-radius: 4px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logar:hover {
+            background-color: #e6f2ff;
+        }
+
     </style>
 </head>
 <body>
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h2>Login</h2>
+                <h2>Registro</h2>
                 <form>
+                    <div class="campos">
+                        <label for="nome">Nome</label>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                            </div>
+                            <input type="text" class="form-control" id="nome" placeholder=" " >
+                        </div>
+                    </div>
+                    <div class="campos">
+                        <label for="sobrenome">Sobrenome</label>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                            </div>
+                            <input type="text" class="form-control" id="nome" placeholder=" " >
+                        </div>
+                    </div>
                     <div class="campos">
                         <label for="email">E-mail</label>
                     </div>
@@ -124,7 +141,7 @@
                             <div class="input-group-prepend">
                                 <span class="input-group-text"><i class="fas fa-envelope"></i></span>
                             </div>
-                            <input type="email" class="form-control" id="email" placeholder=" " required>
+                            <input type="email" class="form-control" id="email" placeholder=" " >
                         </div>
                     </div>
                     <div class="campos">
@@ -135,19 +152,25 @@
                             <div class="input-group-prepend">
                                 <span class="input-group-text"><i class="fas fa-lock"></i></span>
                             </div>
-                            <input type="password" class="form-control" id="senha" placeholder=" " required>
+                            <input type="password" class="form-control" id="senha" placeholder=" " >
                         </div>
                     </div>
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="manterConectado"> 
-                        <label class="form-check-label" for="manterConectado">Manter Conectado</label>
+                    <div class="campos">
+                        <label for="confirmacao-senha">Confirmação da Senha</label>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-lg btn-block">Logar</button>
-                    <p class="mt-3">Ou entre com sua conta do Google</p>
-                    <button type="button" class="btn google-button btn-lg btn-block">
-                        <span class="google-icon"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1024px-Google_%22G%22_logo.svg.png" alt="Google" height="25"></span> Entrar com Google
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                            </div>
+                            <input type="password" class="form-control" id="senha" placeholder=" " >
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg btn-block">Registrar</button>
+                    <p class="mt-3">Já possui uma conta?</p>
+                    <button type="button" class="btn logar btn-lg btn-block">
+                        <a class="fcc-btn" href="/index.html">Logar</a>
                     </button>
-                    <p class="mt-3">Ainda não possui uma conta? <a href="/registro.html">Registrar</a></p>
                 </form>
             </div>
         </div>
