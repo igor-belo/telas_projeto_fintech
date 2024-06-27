@@ -6,109 +6,10 @@
     <title>Login</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-
-    <style>
-        body {
-            font-family: "Roboto", sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            background-color: #f4f4f4;
-        }
-
-        .container {
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            padding: 30px;
-            width: 400px;
-        }
-
-        h2 {
-            color: #4169E1;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .mt-3 {
-            text-align: center
-        }
-
-        input[type="email"],
-        input[type="password"] {
-            width: 100%;
-            padding: 5px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-        }
-
-        button {
-            background-color: #4169E1;
-            color: #fff;
-            padding: 7px 20px;
-            border: none;
-            border-radius: 15px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            font-family: "Roboto", sans-serif;
-            font-weight: 700;
-            font-style: normal;
-            background-color: #4169E1;
-        }
-
-        .google-button {
-            background-color: #fff;
-            color: #4169E1;
-            border: 1px solid #4169E1;
-            padding: 7px 20px;
-            border-radius: 15px;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .google-button:hover {
-            background-color: #e6f2ff;
-        }
-
-        .google-icon {
-            margin-right: 4%;
-        }
-        .input-group-prepend span.input-group-text {
-        background-color: #ffffff;
-        border: none; 
-        padding: 0.0rem 0.75rem; 
-        }
-
-        .input-group-prepend span.input-group-text i {
-        color: #4169E1;
-        }
-
-        .form-check{
-            color: #4169E1;
-            padding: 20px;
-            align-items: center;
-        }
-
-        .campos {
-            font-family: "Roboto", sans-serif;
-            font-weight: 700;
-            font-style: normal;
-            color: #4169E1;
-            display: flex;
-            padding: 10px 0px 0px 40px;
-        }
-        
-    </style>
 </head>
 <body>
     <div class="container">
@@ -138,16 +39,21 @@
                             <input type="password" class="form-control" id="senha" placeholder=" " required>
                         </div>
                     </div>
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="manterConectado"> 
-                        <label class="form-check-label" for="manterConectado">Manter Conectado</label>
-                    </div>
+                    <div class="form-check d-flex justify-content-between align-items-center">
+                        <div>
+                            <input type="checkbox" class="form-check-input" id="manterConectado"> 
+                            <label class="form-check-label" for="manterConectado">Manter Conectado</label>
+                        </div>
+                        <div>
+                            <a href="#" class="esqueci-senha">Esqueci minha senha</a>
+                        </div>
+                    </div>                    
                     <button type="submit" class="btn btn-primary btn-lg btn-block">Logar</button>
                     <p class="mt-3">Ou entre com sua conta do Google</p>
                     <button type="button" class="btn google-button btn-lg btn-block">
                         <span class="google-icon"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1024px-Google_%22G%22_logo.svg.png" alt="Google" height="25"></span> Entrar com Google
                     </button>
-                    <p class="mt-3">Ainda não possui uma conta? <a href="/registro.html">Registrar</a></p>
+                    <p class="mt-3">Ainda não possui uma conta? <a href="registro.html">Registrar</a></p>
                 </form>
             </div>
         </div>
