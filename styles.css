@@ -10,6 +10,7 @@ body {
 }
 
 .container {
+    font-family: "Roboto", sans-serif;
     background-color: #FFFFFF;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -180,12 +181,11 @@ input[type="text"] {
 
 .transactions {
     background-color: #f9f9f9;
-    padding: 15px;
-    border-radius: 5px;
+    padding: 25px;
+    border-radius: 10px;
     margin-bottom: 10px;
     display: flex;
-    justify-content: space-between; /* Espaçamento entre os elementos */
-    align-items: center; /* Alinhamento vertical ao centro */
+    justify-content: space-between; 
     margin-bottom: 10px;
 }
 .balance .balance-icon {
@@ -209,21 +209,33 @@ input[type="text"] {
 .transactions-left {
     display: flex;
     align-items: center;
+    justify-content: right;
 }
 
 .transactions-details {
-    margin-left: 10px; /* Espaçamento entre o ícone e os detalhes */
+    margin-left: 18px; 
     display: flex;
-    flex-direction: column; /* Organiza os itens em coluna */
+    flex-direction: column; 
+}
+.transactions .transactions-details {
+    font-family: "Roboto", sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
 }
 
 .transactions .transaction-label {
-    font-size: 16px;
+    color: #727272;
+    display: flex;
+    font-size: 18px;
     font-weight: bold;
 }
 
 .transactions .transaction-value {
     font-size: 14px;
+    font-weight: bold;
 }
 
 .transactions .transaction-icon {
@@ -270,13 +282,13 @@ input[type="text"] {
 .recent-transactions .transaction-icon {
     font-size: 24px;
     margin-right: 10px;
-    border-radius: 50%; /* Garante que seja um círculo */
+    border-radius: 50%; 
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40px; /* Tamanho do círculo */
-    height: 40px; /* Tamanho do círculo */
-    color: #ffffff; /* Ícone branco */
+    width: 40px; 
+    height: 40px; 
+    color: #ffffff; 
 }
 
 .recent-transactions .green-circle {
@@ -285,6 +297,9 @@ input[type="text"] {
 }
 
 .recent-transactions .red-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #CC2525; /* Vermelho */
     border-color: #CC2525; /* Vermelho */
 }
@@ -293,13 +308,11 @@ input[type="text"] {
     font-size: 16px;
     color: #727272;
     display: flex;
-    flex-direction: row-reverse;
-}
-
-.recent-transactions .transaction-label {
-    font-size: 16px;
+    text-align: center;
+    font-size: 18px;
     font-weight: bold;
 }
+
 
 .recent-transactions .transaction-amount-and-date {
     display: flex;
@@ -308,17 +321,17 @@ input[type="text"] {
 }
 
 .recent-transactions .transaction-amount-green {
-    font-size: 14px;
+    font-size: 15px;
     font-weight: bold;
     color: #3DBF5A;
 }
 
 .recent-transactions .transaction-amount-red {
-    font-size: 14px;
+    font-size: 15px;
     font-weight: bold;
     color: #CC2525;
 }
 .recent-transactions .transaction-date {
-    font-size: 11px;
+    font-size: 12px;
     color: #727272;
 }
