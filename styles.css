@@ -1,3 +1,4 @@
+/* Estilos gerais */
 body {
     font-family: "Roboto", sans-serif;
     display: flex;
@@ -5,25 +6,31 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background-color: #f4f4f4;
+    background-color: #4169E1;
 }
 
 .container {
-    background-color: #fff;
+    background-color: #FFFFFF;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 30px;
-    width: 400px;
+    width: 500px;
 }
 
-h2 {
+.logo-icon {
     color: #4169E1;
-    text-align: center;
-    margin-bottom: 20px;
+    font-size: 4rem;
+    margin-bottom: 30px;
 }
 
 .mt-3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
     text-align: center;
+}
+
+.mt-3 a {
+    color: #4169E1;
 }
 
 input[type="email"],
@@ -35,28 +42,46 @@ input[type="text"] {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    background-color: #F5F5F5;
+    border-left: 0px;
 }
 
-button {
-    background-color: #4169E1;
-    color: #fff;
-    padding: 7px 20px;
-    border: none;
-    border-radius: 15px;
-    cursor: pointer;
+.form-check {
+    color: #4169E1;
+    padding: 20px;
+    align-items: center;
+    font-size: 0.875rem;
+    border-right: 0px;
 }
 
-button:hover {
+.form-check input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.esqueci-senha {
+    color: #4169E1;
+    text-decoration: none;
+    font-size: 0.875rem;
+}
+
+.esqueci-senha:hover {
+    text-decoration: underline;
+}
+
+.campos {
+    font-family: "Roboto", sans-serif;
     font-weight: 700;
-    background-color: #4169E1;
+    font-style: normal;
+    color: #4169E1;
+    display: flex;
 }
 
 .google-button {
-    background-color: #fff;
+    background-color: #FFFFFF;
     color: #4169E1;
     border: 1px solid #4169E1;
     padding: 7px 20px;
-    border-radius: 15px;
+    border-radius: 4px;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -71,78 +96,229 @@ button:hover {
     margin-right: 4%;
 }
 
-.input-group-prepend span.input-group-text {
-    background-color: #ffffff;
-    border: none;
-    padding: 0.0rem 0.75rem;
-}
-
-.input-group-prepend span.input-group-text i {
-    color: #4169E1;
-}
-
-.form-check {
-    color: #4169E1;
-    padding: 20px;
-    align-items: center;
-    font-size: 0.875rem; 
-    display: flex;
-    justify-content: space-between;
-}
-
-.form-check-input {
-    border: 1px solid #4169E1;
-    outline: none;
-    margin-top: 0.3rem;
-}
-
-.form-check-input:checked {
-    background-color: #4169E1;
-    border-color: #4169E1;
-}
-
-.campos {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    color: #4169E1;
-    display: flex;
-    padding: 10px 0px 0px 40px;
-}
-
-.submit {
-    background-color: #4169E1;
-    color: #fff;
-    padding: 5px 20px;
-    border: none;
-    border-radius: 15px;
-    cursor: pointer;
-}
-
-.submit:hover {
-    background-color: #f4f4f4;
-}
-
-.logar {
-    background-color: #fff;
+.btn.logar {
+    background-color: #F5F5F5;
     color: #4169E1;
     border: 1px solid #4169E1;
     padding: 8px 20px;
     border-radius: 4px;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
-.logar:hover {
+.btn.logar:hover {
     background-color: #e6f2ff;
 }
 
-.esqueci-senha {
-    color: #4169E1;
-    text-decoration: none;
-    font-size: 0.875rem; 
+.input-group-prepend span.input-group-text {
+    background-color: #F5F5F5;
+    padding: 0.0rem 0.75rem;
+    border-right: 0px;
 }
 
-.esqueci-senha:hover {
-    text-decoration: underline;
+.input-group-prepend span.input-group-text i {
+    color: #4169E1;
+}
+
+.header {
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+.header .fa-user-circle {
+    font-size: 50px;
+}
+
+.content {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+ h5 {
+    color: #727272;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+    text-align: center;
+ }
+
+.balance {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.balance .transaction-label {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #727272;
+}
+
+.balance .balance-value {
+    font-family: "Roboto", sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    color: #202020;
+}
+.balance .balance-details {
+    font-family: "Roboto", sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.transactions {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between; /* Espaçamento entre os elementos */
+    align-items: center; /* Alinhamento vertical ao centro */
+    margin-bottom: 10px;
+}
+.balance .balance-icon {
+    font-size: 30px;
+    margin: 5px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 36px 10px;
+    width: 40px;
+    height: 40px; 
+    color: #fff; 
+}
+
+.balance .blue-circle {
+    background-color: #4285f4;
+    border-color: #4285f4; 
+}
+.transactions-right,
+.transactions-left {
+    display: flex;
+    align-items: center;
+}
+
+.transactions-details {
+    margin-left: 10px; /* Espaçamento entre o ícone e os detalhes */
+    display: flex;
+    flex-direction: column; /* Organiza os itens em coluna */
+}
+
+.transactions .transaction-label {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.transactions .transaction-value {
+    font-size: 14px;
+}
+
+.transactions .transaction-icon {
+    font-size: 24px;
+    margin-right: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px; 
+    color: #fff; 
+}
+
+.transactions .green-circle {
+    background-color: #3DBF5A;
+    border-color: #3DBF5A; 
+}
+
+.transactions .red-circle {
+    background-color: #CC2525; 
+    border-color: #CC2525; 
+}
+
+
+.recent-transactions {
+    margin-top: 20px;
+}
+
+.recent-transactions h5 {
+    margin-bottom: 10px;
+}
+
+.recent-transactions .transaction {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.recent-transactions .transaction-icon {
+    font-size: 24px;
+    margin-right: 10px;
+    border-radius: 50%; /* Garante que seja um círculo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px; /* Tamanho do círculo */
+    height: 40px; /* Tamanho do círculo */
+    color: #ffffff; /* Ícone branco */
+}
+
+.recent-transactions .green-circle {
+    background-color: #3DBF5A; /* Verde */
+    border-color: #3DBF5A; /* Verde */
+}
+
+.recent-transactions .red-circle {
+    background-color: #CC2525; /* Vermelho */
+    border-color: #CC2525; /* Vermelho */
+}
+
+.recent-transactions .transaction-details {
+    font-size: 16px;
+    color: #727272;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.recent-transactions .transaction-label {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.recent-transactions .transaction-amount-and-date {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.recent-transactions .transaction-amount-green {
+    font-size: 14px;
+    font-weight: bold;
+    color: #3DBF5A;
+}
+
+.recent-transactions .transaction-amount-red {
+    font-size: 14px;
+    font-weight: bold;
+    color: #CC2525;
+}
+.recent-transactions .transaction-date {
+    font-size: 11px;
+    color: #727272;
 }
