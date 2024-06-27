@@ -90,6 +90,7 @@ input[type="text"] {
 }
 
 .google-button:hover {
+    color:#4169E1;
     background-color: #e6f2ff;
 }
 
@@ -109,6 +110,51 @@ input[type="text"] {
 }
 
 .btn.logar:hover {
+    background-color: #e6f2ff;
+}
+
+.btn-primary {
+    text-decoration: none;
+    text-decoration-color: none;
+    background-color: #4169E1;
+    color: #F5F5F5;
+    border: 1px solid #4169E1;
+    padding: 8px 20px;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.btn-primary:hover{
+    text-decoration: none;
+    text-decoration-color: none;
+    color: #4169E1;
+    background-color: #e6f2ff;
+}
+
+.btn-primary a {
+    color: #F5F5F5;
+    text-decoration: none;
+}
+
+.btn-primary a:hover {
+    color: #4169E1;
+    text-decoration: none;
+}
+.btn-home {
+    background-color: #4169E1;
+    color: #F5F5F5;
+    border: 1px solid #4169E1;
+    padding: 8px 20px;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.btn-home:hover{
+    color: #4169E1;
     background-color: #e6f2ff;
 }
 
