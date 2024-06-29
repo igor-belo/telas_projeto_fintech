@@ -6,7 +6,9 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background-color: #4169E1;
+    background: linear-gradient(to bottom, #4169E1, #002AA7);
+    cursor: pointer;
+    transition: background 0.3s ease;
 }
 
 .container {
@@ -25,12 +27,23 @@ body {
 }
 
 .mt-3 {
+    color: #4169E1;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    text-align: center;
+}
+
+.mt-3 a {
+    color: #4169E1;
+}
+
+.mt-4 {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     text-align: center;
 }
 
-.mt-3 a {
+.mt-4 a {
     color: #4169E1;
 }
 
@@ -40,11 +53,15 @@ input[type="text"] {
     width: 100%;
     padding: 5px;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #4169E1;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
     border-radius: 4px;
     box-sizing: border-box;
     background-color: #F5F5F5;
     border-left: 0px;
+    
 }
 
 .form-check {
@@ -53,6 +70,21 @@ input[type="text"] {
     align-items: center;
     font-size: 0.875rem;
     border-right: 0px;
+    border-block-end-color: #4169E1;
+}
+
+.input-group-prepend span.input-group-text {
+    background-color: #F5F5F5;
+    padding: 0.0rem 0.75rem;
+    border: 1px solid #4169E1;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-radius: 4px;
+}
+
+.input-group-prepend span.input-group-text i {
+    color: #4169E1;
 }
 
 .form-check input[type="checkbox"] {
@@ -126,6 +158,16 @@ input[type="text"] {
     text-align: center;
 }
 
+.separator {
+    width: 80%;
+    height: 1px;
+    background-color: #4169E1;
+    margin: 30px auto;
+}
+
+.space {
+    margin: 35px auto;
+}
 .btn-primary:hover{
     text-decoration: none;
     text-decoration-color: none;
@@ -140,6 +182,7 @@ input[type="text"] {
 
 .btn-primary a:hover {
     color: #4169E1;
+    background-color: #e6f2ff;
     text-decoration: none;
 }
 .btn-home {
@@ -156,16 +199,6 @@ input[type="text"] {
 .btn-home:hover{
     color: #4169E1;
     background-color: #e6f2ff;
-}
-
-.input-group-prepend span.input-group-text {
-    background-color: #F5F5F5;
-    padding: 0.0rem 0.75rem;
-    border-right: 0px;
-}
-
-.input-group-prepend span.input-group-text i {
-    color: #4169E1;
 }
 
 .header {
